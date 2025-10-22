@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enter Zovirella: a bright, browser-based web games realm for adults 21+. Explore the Zephyr Burst journey and our original slot-style tale Rings of Frosting. Play for fun only.">
+    <meta name="keywords" content="zovirella, zovirella.com, browser games, html games, webbased games, web games, social arcade, 21+, zephyr burst, rings of frosting">
+    <title>Zovirella — web games in a candy-tale world | 21+ | zovirella.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#home" class="logo">
+                    <span class="logo__icon">🍩</span>
+                    <span class="logo__text">Zovirella</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="/game/" class="nav__link">Game</a>
+                    <a href="/about.html" class="nav__link">About</a>
+                    <a href="/contact.html" class="nav__link">Contact</a>
+                </nav>
+                <div class="header__actions">
+                    <span class="age-badge">21+</span>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__bg"></div>
+        <div class="hero__overlay"></div>
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__sparkle">✨</div>
+                <h1 class="hero__title">
+                    Welcome to <span class="gradient-text">Zovirella</span>
+                </h1>
+                <p class="hero__subtitle">A Sweet Web-Games Realm for Grown-Ups</p>
+                <p class="hero__description">
+                    In the dawn-pink hills of our candy-tale world, every spin tells a story. 
+                    Dive into <strong>Rings of Frosting</strong> and more delightful adventures 
+                    crafted for joy only—no stakes, just sweet fun!
+                </p>
+                <div class="hero__cta">
+                    <a href="#games" class="btn btn--primary">
+                        <span>Play Now</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn--ghost">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+                <p class="hero__disclaimer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    Fun only • No real money • 21+ only
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section--about" id="about">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">The Story</span>
+                <h2 class="section__title">A Sweet Web-Games Realm</h2>
+                <p class="section__lead">
+                    Zovirella isn't just a website—it's a world where candy-colored dreams 
+                    meet browser-based adventure. We're your cozy corner for social gaming, 
+                    designed for adults who love a dash of whimsy.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">Browser-First</h3>
+                    <p class="feature-card__desc">
+                        No downloads, no hassle. Play instantly in your browser on any device.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">No Real Money</h3>
+                    <p class="feature-card__desc">
+                        Pure social fun. No bets, no stakes—just entertainment and joy.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="8" r="5"/>
+                            <path d="M20 21a8 8 0 1 0-16 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-card__title">21+ Community</h3>
+                    <p class="feature-card__desc">
+                        A grown-up space for playful spirits. Mature content, responsible fun.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="section section--games" id="games">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Our Game</span>
+                <h2 class="section__title">Rings of Frosting</h2>
+                <p class="section__lead">
+                    Our signature slot-style game! Spin the frosted rings, collect sprinkles, 
+                    and enjoy sweet surprises in this browser-based adventure.
+                </p>
+            </div>
+            
+            <div class="game-showcase">
+                <div class="game-showcase__image">
+                    <div class="game-showcase__placeholder">
+                        <span class="game-showcase__emoji">🍩💍✨</span>
+                    </div>
+                </div>
+                <div class="game-showcase__content">
+                    <h3 class="game-showcase__title">Experience the Magic</h3>
+                    <p class="game-showcase__desc">
+                        Dive into a whimsical world where every spin tells a story. 
+                        Collect colorful sprinkles, unlock special bonuses, and explore 
+                        the sweet candy-tale universe of Zovirella.
+                    </p>
+                    <ul class="game-showcase__features">
+                        <li>🎨 Beautiful candy-themed graphics</li>
+                        <li>🎮 Instant browser play - no download</li>
+                        <li>🎯 100% free - no real money needed</li>
+                        <li>🎊 Regular updates with new features</li>
+                    </ul>
+                    <a href="/game/" class="btn btn--primary btn--large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        <span>Play Rings of Frosting Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section class="section section--why">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Why Zovirella</span>
+                <h2 class="section__title">Fun-First Philosophy</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-item__number">01</div>
+                    <h3 class="why-item__title">Pure Entertainment</h3>
+                    <p class="why-item__desc">
+                        No money, no stress. Just delightful games that bring joy and relaxation.
+                    </p>
+                </div>
+                <div class="why-item">
+                    <div class="why-item__number">02</div>
+                    <h3 class="why-item__title">Instant Access</h3>
+                    <p class="why-item__desc">
+                        Play anywhere, anytime. No downloads or installs required—just click and go.
+                    </p>
+                </div>
+                <div class="why-item">
+                    <div class="why-item__number">03</div>
+                    <h3 class="why-item__title">Safe & Responsible</h3>
+                    <p class="why-item__desc">
+                        21+ only, with clear disclaimers. We prioritize your wellbeing and fun.
+                    </p>
+                </div>
+                <div class="why-item">
+                    <div class="why-item__number">04</div>
+                    <h3 class="why-item__title">Regular Updates</h3>
+                    <p class="why-item__desc">
+                        New games, features, and surprises added regularly to keep things fresh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section--faq" id="faq">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__label">Questions?</span>
+                <h2 class="section__title">Frequently Asked</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>What is Zovirella?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Zovirella is a free, browser-based social gaming platform for adults 21+. We offer fun, candy-themed web games like <strong>Rings of Frosting</strong> and other Zephyr Burst adventures. No real money, no downloads—just pure entertainment!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Is it really free? Do I need to pay?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Absolutely free! There's no real money involved—no bets, no purchases, no hidden costs. Zovirella is built for fun only. All games are social and meant for entertainment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Why is it 21+ only?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Our games feature slot-style mechanics and adult themes. While there's no real gambling, we maintain a 21+ age restriction to ensure a mature, responsible community.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Do I need to download anything?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Nope! Everything runs directly in your browser. No downloads, no installs, no apps. Just visit zovirella.com and start playing instantly on desktop, tablet, or mobile.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Can I win real money or prizes?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>No. Zovirella is <strong>not a real-money gaming site</strong>. All achievements, scores, and progress are purely for entertainment. Winning here does not guarantee success in any real-stakes activities.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>What is "Rings of Frosting"?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>It's our flagship slot-style game! Spin the frosted rings, collect sprinkles, and enjoy a whimsical candy adventure. It's browser-based, fun, and completely free to play.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--contact" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-box__content">
+                    <h2 class="contact-box__title">Get in Touch</h2>
+                    <p class="contact-box__desc">
+                        Questions, feedback, or just want to say hi? We'd love to hear from you!
+                    </p>
+                    <a href="mailto:hello@zovirella.com" class="btn btn--primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span>hello@zovirella.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <div class="logo">
+                        <span class="logo__icon">🍩</span>
+                        <span class="logo__text">Zovirella</span>
+                    </div>
+                    <p class="footer__tagline">A sweet web-games realm for grown-ups (21+)</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4>Games</h4>
+                        <ul>
+                            <li><a href="/game/">Rings of Frosting</a></li>
+                            <li><a href="/#games">All Games</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/terms">Terms of Use</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="/community-rules.html">Community Rules</a></li>
+                            <li><a href="/responsible-gaming.html">Responsible Gaming</a></li>
+                            <li><a href="/#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__disclaimer">
+                <h3>Disclaimer & Age Restriction Notice</h3>
+                <p>
+                    This platform is intended for users aged <strong>21 years and older</strong> and operates 
+                    solely as a social and entertainment hub. There is <strong>no real money gaming or betting</strong> 
+                    on this website. All games featured here are part of "Zephyr Burst" and are purely social, 
+                    meaning no real prizes or winnings will be issued. Achievements and progress made within these 
+                    games are for entertainment purposes only and do not translate into real-world outcomes or 
+                    success in any form of real-money activities. Winning in these games does not guarantee 
+                    future wins in any "real stakes" activities. This website serves as a free-access portal 
+                    to social Zephyr Burst games, and we take no responsibility for their content. If you believe 
+                    any game causes offense or harm, please contact us. Our goal is to provide a fun and engaging 
+                    experience for all users—enjoy, play responsibly, and remember that it's all about entertainment!
+                </p>
+            </div>
+
+            <div class="footer__badges">
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                        <text x="20" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">21+</text>
+                    </svg>
+                    <span>Age Verified</span>
+                </div>
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 4L24 16H36L26 24L30 36L20 28L10 36L14 24L4 16H16L20 4Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>NCPG Member</span>
+                </div>
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span>CGAA Certified</span>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <address class="footer__address">
+                    123 Candyfloss Lane, Brighton BN1 4GQ, United Kingdom · 
+                    <a href="mailto:hello@zovirella.com">hello@zovirella.com</a>
+                </address>
+                <p class="footer__copyright">
+                    © <span id="year"></span> Zovirella · All rights reserved · 
+                    <a href="/terms">Terms</a> · 
+                    <a href="/privacy">Privacy</a> · 
+                    <a href="#contact">Contact</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

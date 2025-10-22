@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Rings of Frosting - A magical slot-style adventure in the candy-tale world of Zovirella. Free to play, no real money, 21+ only.">
+    <title>Rings of Frosting - Play Now | Zovirella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="game-styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="logo">
+                    <span class="logo__icon">🍩</span>
+                    <span class="logo__text">Zovirella</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="/game/" class="nav__link active">Game</a>
+                    <a href="/about.html" class="nav__link">About</a>
+                    <a href="/contact.html" class="nav__link">Contact</a>
+                </nav>
+                <div class="header__actions">
+                    <span class="age-badge">21+</span>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Game Hero -->
+    <section class="game-hero">
+        <div class="container">
+            <div class="game-hero__content">
+                <div class="game-hero__badge">🍩 Featured Game</div>
+                <h1 class="game-hero__title">Rings of Frosting</h1>
+                <p class="game-hero__subtitle">
+                    Journey Through the Enchanted Donut Kingdom
+                </p>
+                <p class="game-hero__description">
+                    In the heart of Zovirella's candy-tale realm lies a mystical bakery where frosted rings 
+                    spin with magic and sprinkles tell fortunes. Legend speaks of the ancient Donut Prophecy—where 
+                    those pure of heart may witness the dance of the Rings of Frosting, unlocking sweet mysteries 
+                    and discovering treasures hidden within glazed treasures. Will you answer the call of the 
+                    sugared winds and embark on this delicious adventure?
+                </p>
+                <div class="game-hero__meta">
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        <span>Free to Play</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                        <span>Browser-Based</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        <span>No Real Money</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Container -->
+    <section class="game-section">
+        <div class="container">
+            <div class="game-container">
+                <div class="game-wrapper">
+                    <!-- 21+ Badge Overlay -->
+                    <div class="age-overlay">
+                        <div class="age-overlay__badge">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <circle cx="30" cy="30" r="28" fill="rgba(0, 0, 0, 0.7)" stroke="#FFB020" stroke-width="2"/>
+                                <text x="30" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#FFB020">21+</text>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <!-- Game iFrame -->
+                    <iframe 
+                        id="gameFrame"
+                        src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20fruitsw&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F&lang=en&cur=USD"
+                        frameborder="0"
+                        allowfullscreen
+                        class="game-frame"
+                        title="Rings of Frosting Game"
+                    ></iframe>
+                    
+                    <div class="game-loading" id="gameLoading">
+                        <div class="loading-spinner"></div>
+                        <p>Loading your sweet adventure...</p>
+                    </div>
+                </div>
+                
+                <!-- Game Controls Info -->
+                <div class="game-controls">
+                    <div class="control-item">
+                        <span class="control-icon">🎮</span>
+                        <div class="control-content">
+                            <h4>How to Play</h4>
+                            <p>Click the spin button to start your magical journey</p>
+                        </div>
+                    </div>
+                    <div class="control-item">
+                        <span class="control-icon">💰</span>
+                        <div class="control-content">
+                            <h4>Virtual Credits</h4>
+                            <p>Play with fun credits - no real money involved</p>
+                        </div>
+                    </div>
+                    <div class="control-item">
+                        <span class="control-icon">🎯</span>
+                        <div class="control-content">
+                            <h4>Match & Win</h4>
+                            <p>Line up matching symbols for exciting combinations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Description -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="game-description">
+                <h2 class="game-description__title">The Tale of the Frosted Rings</h2>
+                <div class="game-description__content">
+                    <p class="game-description__text">
+                        Welcome to the most enchanting slot experience in all of Zovirella! <strong>Rings of Frosting</strong> 
+                        transports you to a whimsical bakery where ancient donut rings spin on mystical reels, each adorned 
+                        with sparkling sprinkles and glazed with magical frosting that shimmers in rainbow hues.
+                    </p>
+                    <p class="game-description__text">
+                        Legend tells of a master baker who discovered that certain combinations of frosted rings could 
+                        unlock doorways to treasure-filled candy kingdoms. As you spin the reels, you're not just playing 
+                        a game—you're participating in an age-old tradition of donut divination, where matching symbols 
+                        reveal hidden fortunes and sweet surprises.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <div class="how-it-works">
+                <h2 class="section__title">How the Magic Works</h2>
+                <p class="section__lead">
+                    Master the art of frosted ring spinning with our comprehensive guide to gameplay
+                </p>
+
+                <div class="mechanics-grid">
+                    <div class="mechanic-card">
+                        <div class="mechanic-card__number">01</div>
+                        <h3 class="mechanic-card__title">The Spinning Ritual</h3>
+                        <p class="mechanic-card__desc">
+                            Each spin sets the mystical reels in motion, causing the frosted rings to dance and swirl. 
+                            The reels contain various donut symbols—from classic glazed to chocolate sprinkled, 
+                            strawberry frosted to powdered sugar delights. Click the <strong>Spin</strong> button 
+                            to begin your journey, and watch as the rings settle into place, one magical row at a time.
+                        </p>
+                    </div>
+
+                    <div class="mechanic-card">
+                        <div class="mechanic-card__number">02</div>
+                        <h3 class="mechanic-card__title">Winning Combinations</h3>
+                        <p class="mechanic-card__desc">
+                            Victory comes when matching symbols align across <strong>paylines</strong>—the invisible 
+                            paths of destiny that cross the reels. Land three or more identical donut symbols on an 
+                            active payline, and witness your virtual credit counter soar! The rarer the donut (like the 
+                            legendary Golden Glaze), the sweeter your rewards. Some combinations unlock cascade effects, 
+                            where winning symbols disappear and new ones tumble down for additional chances.
+                        </p>
+                    </div>
+
+                    <div class="mechanic-card">
+                        <div class="mechanic-card__number">03</div>
+                        <h3 class="mechanic-card__title">Special Symbols & Wild Frosting</h3>
+                        <p class="mechanic-card__desc">
+                            Keep your eyes peeled for <strong>Wild Symbols</strong>—magical rings that can substitute 
+                            for any regular donut to complete winning lines. The <strong>Scatter Symbol</strong> (usually 
+                            a sparkling sugar crystal) can appear anywhere on the reels and doesn't need to follow paylines. 
+                            Collect 3 or more Scatters to trigger special events or bonus rounds.
+                        </p>
+                    </div>
+
+                    <div class="mechanic-card">
+                        <div class="mechanic-card__number">04</div>
+                        <h3 class="mechanic-card__title">Bonus Rounds & Free Spins</h3>
+                        <p class="mechanic-card__desc">
+                            When the stars align and you trigger a <strong>Bonus Round</strong>, you're transported 
+                            to a special candy chamber where enhanced rewards await. During bonus rounds, you might 
+                            receive <strong>Free Spins</strong>—magical rotations that cost you nothing but can yield 
+                            magnificent virtual treasures. Multipliers may increase your winnings by 2x, 3x, or even 
+                            higher! Some rounds include mini-games where you pick from frosted boxes or spin the 
+                            Wheel of Sweet Fortune.
+                        </p>
+                    </div>
+
+                    <div class="mechanic-card">
+                        <div class="mechanic-card__number">05</div>
+                        <h3 class="mechanic-card__title">Bet Adjustments & Autoplay</h3>
+                        <p class="mechanic-card__desc">
+                            Before each spin, you can adjust your virtual <strong>bet level</strong> using the 
+                            controls beneath the reels. Remember: all bets are made with fun credits only—no real 
+                            money is involved! Use the <strong>Autoplay</strong> feature to set the reels spinning 
+                            automatically for a chosen number of rounds. This lets you sit back and enjoy the 
+                            candy-coated spectacle without clicking each time.
+                        </p>
+                    </div>
+
+                    <div class="mechanic-card">
+                        <div class="mechanic-card__number">06</div>
+                        <h3 class="mechanic-card__title">Paytable & Game Info</h3>
+                        <p class="mechanic-card__desc">
+                            Click the <strong>Info</strong> or <strong>Paytable</strong> button (usually marked with 
+                            an "i" icon) to view detailed information about symbol values, payline patterns, and 
+                            bonus features. This magical tome reveals which donut combinations yield the highest 
+                            rewards and explains how to trigger special rounds. Study it well to maximize your 
+                            enjoyment!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Important Notes -->
+                <div class="game-notice">
+                    <div class="game-notice__icon">⚠️</div>
+                    <div class="game-notice__content">
+                        <h3 class="game-notice__title">Important: Entertainment Only</h3>
+                        <p class="game-notice__text">
+                            <strong>Rings of Frosting</strong> is a social casino game designed purely for entertainment. 
+                            All credits, wins, and bonuses are <strong>virtual and have no real-world monetary value</strong>. 
+                            You cannot cash out, exchange for real money, or redeem any prizes. This game operates under 
+                            Zovirella's commitment to <strong>risk-free gaming</strong>—providing all the excitement of 
+                            slots without any financial stakes. Success in this game does not guarantee success in real-money 
+                            activities. Play responsibly and remember: it's all about fun!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Features -->
+    <section class="section section--alt">
+        <div class="container">
+            <h2 class="section__title">Game Features</h2>
+            <div class="features-showcase">
+                <div class="feature-showcase-item">
+                    <div class="feature-showcase-item__icon">✨</div>
+                    <h3 class="feature-showcase-item__title">Stunning Visuals</h3>
+                    <p class="feature-showcase-item__desc">
+                        Immerse yourself in a beautifully crafted candy-tale world with vibrant colors, 
+                        smooth animations, and delightful sound effects that bring every spin to life.
+                    </p>
+                </div>
+                <div class="feature-showcase-item">
+                    <div class="feature-showcase-item__icon">🎵</div>
+                    <h3 class="feature-showcase-item__title">Enchanting Soundtrack</h3>
+                    <p class="feature-showcase-item__desc">
+                        A whimsical audio backdrop accompanies your journey, with cheerful melodies that 
+                        celebrate wins and maintain the magical atmosphere throughout your play session.
+                    </p>
+                </div>
+                <div class="feature-showcase-item">
+                    <div class="feature-showcase-item__icon">📱</div>
+                    <h3 class="feature-showcase-item__title">Mobile Optimized</h3>
+                    <p class="feature-showcase-item__desc">
+                        Enjoy seamless gameplay on any device. The game automatically adapts to your screen 
+                        size, ensuring a perfect experience whether on desktop, tablet, or mobile.
+                    </p>
+                </div>
+                <div class="feature-showcase-item">
+                    <div class="feature-showcase-item__icon">⚡</div>
+                    <h3 class="feature-showcase-item__title">Instant Play</h3>
+                    <p class="feature-showcase-item__desc">
+                        No downloads, no installations, no waiting. Click and play immediately in your browser. 
+                        Start spinning those frosted rings within seconds!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section">
+        <div class="container">
+            <div class="game-cta">
+                <h2 class="game-cta__title">Ready for More Adventures?</h2>
+                <p class="game-cta__desc">
+                    Explore other enchanting experiences in the Zovirella universe
+                </p>
+                <div class="game-cta__buttons">
+                    <a href="/" class="btn btn--primary btn--large">
+                        <span>Discover More Games</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="/about.html" class="btn btn--ghost btn--large">
+                        <span>Learn About Zovirella</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <div class="logo">
+                        <span class="logo__icon">🍩</span>
+                        <span class="logo__text">Zovirella</span>
+                    </div>
+                    <p class="footer__tagline">A sweet web-games realm for grown-ups (21+)</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4>Games</h4>
+                        <ul>
+                            <li><a href="/game/">Rings of Frosting</a></li>
+                            <li><a href="/#games">Zephyr Burst</a></li>
+                            <li><a href="/#games">All Games</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about.html">About Us</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/terms">Terms of Use</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="/community-rules.html">Community Rules</a></li>
+                            <li><a href="/responsible-gaming.html">Responsible Gaming</a></li>
+                            <li><a href="/#faq">FAQ</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__disclaimer">
+                <h3>Disclaimer & Age Restriction Notice</h3>
+                <p>
+                    This platform is intended for users aged <strong>21 years and older</strong> and operates 
+                    solely as a social and entertainment hub. There is <strong>no real money gaming or betting</strong> 
+                    on this website. All games featured here are part of "Zephyr Burst" and are purely social, 
+                    meaning no real prizes or winnings will be issued. Achievements and progress made within these 
+                    games are for entertainment purposes only and do not translate into real-world outcomes or 
+                    success in any form of real-money activities. Winning in these games does not guarantee 
+                    future wins in any "real stakes" activities. This website serves as a free-access portal 
+                    to social Zephyr Burst games, and we take no responsibility for their content. If you believe 
+                    any game causes offense or harm, please contact us. Our goal is to provide a fun and engaging 
+                    experience for all users—enjoy, play responsibly, and remember that it's all about entertainment!
+                </p>
+            </div>
+
+            <div class="footer__badges">
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+                        <text x="20" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">21+</text>
+                    </svg>
+                    <span>Age Verified</span>
+                </div>
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 4L24 16H36L26 24L30 36L20 28L10 36L14 24L4 16H16L20 4Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span>NCPG Member</span>
+                </div>
+                <div class="badge-item">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span>CGAA Certified</span>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <address class="footer__address">
+                    123 Candyfloss Lane, Brighton BN1 4GQ, United Kingdom · 
+                    <a href="mailto:hello@zovirella.com">hello@zovirella.com</a>
+                </address>
+                <p class="footer__copyright">
+                    © <span id="year"></span> Zovirella · All rights reserved · 
+                    <a href="/terms">Terms</a> · 
+                    <a href="/privacy">Privacy</a> · 
+                    <a href="/contact.html">Contact</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="game-script.js"></script>
+</body>
+</html>
