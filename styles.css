@@ -232,6 +232,10 @@ img {
     flex-direction: column;
     gap: 5px;
     padding: var(--space-sm);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 .nav-toggle span {
@@ -240,6 +244,94 @@ img {
     background: var(--clr-accent);
     border-radius: 2px;
     transition: all 0.22s ease;
+}
+
+.nav-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--ink-800) 0%, var(--ink-1000) 100%);
+    padding: 100px 32px 32px;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(11, 10, 20, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.mobile-menu__overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mobile-menu__link {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--clr-accent);
+    padding: 16px 20px;
+    border-radius: var(--radius-md);
+    transition: all 0.22s ease;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-menu__link:hover {
+    color: var(--paper-0);
+    background: rgba(255, 210, 30, 0.1);
+}
+
+.mobile-menu__cta {
+    margin-top: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    background: var(--gradient-cta);
+    color: var(--ink-800);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 24px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-hard);
+    text-decoration: none;
+    width: 100%;
 }
 
 /* Enchanted Hero */
@@ -301,6 +393,26 @@ img {
     font-size: 14px;
     margin-bottom: var(--space-lg);
     box-shadow: var(--shadow-glow);
+}
+
+.showcase-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: rgba(255, 210, 30, 0.2);
+    backdrop-filter: blur(8px);
+    border: 2px solid var(--clr-accent);
+    border-radius: var(--radius-pill);
+    padding: var(--space-sm) var(--space-lg);
+    color: var(--clr-accent);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: var(--space-lg);
+    box-shadow: var(--shadow-glow);
+}
+
+.showcase-badge span:first-child {
+    font-size: 20px;
 }
 
 .enchanted-hero__title {
@@ -1026,6 +1138,10 @@ img {
         display: flex;
     }
 
+    .btn-play-now {
+        display: none;
+    }
+
     .story-panel,
     .story-panel--reverse {
         grid-template-columns: 1fr;
@@ -1033,6 +1149,11 @@ img {
 
     .story-panel--reverse .story-panel__visual {
         order: 0;
+    }
+
+    .story-panel__visual {
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .game-display {
@@ -1054,19 +1175,73 @@ img {
         --space-xxl: 32px;
     }
 
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .brand-logo {
         font-size: 20px;
     }
 
     .enchanted-hero {
         min-height: 100vh;
+        padding: 100px 0 60px;
+    }
+
+    .enchanted-hero__frame {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .enchanted-hero__title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .enchanted-hero__tagline {
+        font-size: 16px;
     }
 
     .enchanted-hero__actions {
         flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-magical {
+        width: 100%;
+        justify-content: center;
     }
 
     .essence-grid {
         grid-template-columns: 1fr;
+    }
+
+    .garden-story {
+        padding: 60px 0;
+    }
+
+    .story-panel {
+        gap: 32px;
+    }
+
+    .story-panel__content {
+        padding: 24px 0;
+    }
+
+    .story-panel__visual {
+        padding: 0;
+    }
+
+    .game-feature {
+        padding: 60px 0;
+    }
+
+    .guide-section {
+        padding: 60px 0;
+    }
+
+    .magic-footer {
+        padding: 60px 0 32px;
     }
 }
