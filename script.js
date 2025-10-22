@@ -75,38 +75,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// FAQ Accordion - Updated for guide-item
-const faqItems = document.querySelectorAll('.faq-item');
-const guideItems = document.querySelectorAll('.guide-item');
+// Codex Accordion (previously guide-item)
+const codexItems = document.querySelectorAll('.codex-item');
 
-faqItems.forEach(item => {
-    const question = item.querySelector('.faq-item__question');
-
-    if (question) {
-        question.addEventListener('click', () => {
-            const isActive = item.classList.contains('active');
-
-            faqItems.forEach(faqItem => {
-                faqItem.classList.remove('active');
-            });
-
-            if (!isActive) {
-                item.classList.add('active');
-            }
-        });
-    }
-});
-
-// Guide Accordion
-guideItems.forEach(item => {
-    const trigger = item.querySelector('.guide-item__trigger');
+codexItems.forEach(item => {
+    const trigger = item.querySelector('.codex-item__trigger');
 
     if (trigger) {
         trigger.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
 
-            guideItems.forEach(guideItem => {
-                guideItem.classList.remove('active');
+            codexItems.forEach(codexItem => {
+                codexItem.classList.remove('active');
             });
 
             if (!isActive) {
@@ -172,7 +152,7 @@ if (!prefersReducedMotion) {
 
 // Console easter egg
 const styles = [
-    'background: linear-gradient(135deg, #FF7BA3, #FFB86C)',
+    'background: linear-gradient(135deg, #8F63FF, #19F2C3)',
     'color: white',
     'font-size: 20px',
     'font-weight: bold',
@@ -180,12 +160,12 @@ const styles = [
     'border-radius: 10px'
 ].join(';');
 
-console.log('%c🍩 Welcome to Zovirella!', styles);
+console.log('%c💎 Welcome to Novariluxo!', styles);
 console.log(
-    '%cA sweet web-games realm for grown-ups (21+)\n' +
-    'Made with 🎨 and ❤️\n' +
-    'No real money • Just pure fun!',
-    'color: #9C6BFF; font-size: 14px; line-height: 1.8;'
+    '%cA mystical gems realm for explorers (21+)\n' +
+    'Crafted with 💎 and ✨\n' +
+    'No real money • Just pure thrills!',
+    'color: #19F2C3; font-size: 14px; line-height: 1.8;'
 );
 
 // Analytics placeholder
@@ -194,13 +174,13 @@ console.log(
 
 // Age verification (simple version - for demo only)
 // In production, implement a proper age gate
-const ageVerified = localStorage.getItem('zovirella_age_verified');
+const ageVerified = localStorage.getItem('novariluxo_age_verified');
 
 if (!ageVerified) {
     // Show age verification modal on first visit
     // For now, we'll just set it automatically
-    localStorage.setItem('zovirella_age_verified', 'true');
-    console.log('📍 Age verification would appear here in production');
+    localStorage.setItem('novariluxo_age_verified', 'true');
+    console.log('💎 Age verification would appear here in production');
 }
 
 // Add loading animation complete
@@ -358,6 +338,6 @@ slideStyle.textContent = `
 document.head.appendChild(slideStyle);
 
 // Ready notification
-console.log('✨ Zovirella is ready! Have fun!');
+console.log('💎 Novariluxo is ready! Explore the depths!');
 
 }); // End DOMContentLoaded
