@@ -1231,6 +1231,31 @@ img {
 
     .story-panel__visual {
         padding: 0;
+        max-width: 280px;
+    }
+
+    .flower-cluster {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+
+    .flower-emoji {
+        font-size: 48px;
+    }
+
+    .reel-preview {
+        flex-wrap: wrap;
+        gap: var(--space-xs);
+        padding: var(--space-md);
+    }
+
+    .reel-symbol {
+        font-size: 36px;
+        padding: var(--space-sm);
+    }
+
+    .fairy-sprite {
+        font-size: 64px;
     }
 
     .game-feature {
