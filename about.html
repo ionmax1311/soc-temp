@@ -3,402 +3,447 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Zovirella - our mission to provide risk-free gaming entertainment for adults 21+. Discover our story, values, and commitment to responsible gaming.">
-    <title>About Us - Zovirella | Our Story & Mission</title>
+    <meta name="description" content="Discover the magical story of Belarivonix - where the Slot Flower blooms eternal. Learn about our enchanted realm of browser games, html games, and webbased games for adults 21+.">
+    <meta name="keywords" content="belarivonix, belarivonix.com, about belarivonix, slot flower story, browser games, html games, webbased games, fairy garden, magical games">
+    <title>About Belarivonix — The Story of Our Enchanted Garden | 21+ | belarivonix.com</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
+    <!-- Magical Header -->
+    <header class="magic-header">
+        <div class="magic-header__glow"></div>
         <div class="container">
-            <div class="header__content">
-                <a href="/" class="logo">
-                    <span class="logo__icon">🍩</span>
-                    <span class="logo__text">Zovirella</span>
+            <div class="magic-header__inner">
+                <a href="/" class="brand-logo">
+                    <span class="brand-logo__icon">🌺</span>
+                    <span class="brand-logo__text">Belarivonix</span>
                 </a>
-                <nav class="nav" id="nav">
-                    <a href="/game/" class="nav__link">Game</a>
-                    <a href="/about.html" class="nav__link active">About</a>
-                    <a href="/contact.html" class="nav__link">Contact</a>
+
+                <nav class="fairy-nav">
+                    <a href="/" class="fairy-nav__link">Home</a>
+                    <a href="/game/" class="fairy-nav__link">Play</a>
+                    <a href="/about.html" class="fairy-nav__link" style="color: var(--paper-0);">About Us</a>
                 </nav>
-                <div class="header__actions">
-                    <span class="age-badge">21+</span>
-                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
+
+                <a href="/contact.html" class="btn-play-now">
+                    <span>Contact</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
 
+    <div class="mobile-menu__overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <a href="/" class="mobile-menu__link">Home</a>
+            <a href="/game/" class="mobile-menu__link">Play</a>
+            <a href="/about.html" class="mobile-menu__link">About Us</a>
+            <a href="/contact.html" class="mobile-menu__cta">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>Contact</span>
+            </a>
+        </nav>
+    </div>
+
     <!-- About Hero -->
-    <section class="about-hero">
+    <section class="enchanted-hero" style="min-height: 60vh;">
+        <div class="enchanted-hero__stars"></div>
+        <div class="enchanted-hero__garden-bg"></div>
         <div class="container">
-            <div class="about-hero__content">
-                <span class="about-hero__label">Our Story</span>
-                <h1 class="about-hero__title">About Zovirella</h1>
-                <p class="about-hero__subtitle">
-                    A safe haven for gaming enthusiasts who love the thrill 
-                    without the risk
+            <div class="enchanted-hero__frame">
+                <div class="showcase-badge">
+                    <span>📖</span>
+                    <span>Our Tale</span>
+                </div>
+
+                <h1 class="enchanted-hero__title" style="font-size: clamp(42px, 7vw, 72px);">
+                    The Story of <span class="text-shimmer">Belarivonix</span>
+                </h1>
+
+                <p class="enchanted-hero__tagline">
+                    Where Enchanted Flowers Bloom Without Stakes
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="section">
+    <!-- Origin Story -->
+    <section class="garden-story">
         <div class="container">
-            <div class="content-block">
-                <h2 class="content-block__title">Our Mission</h2>
-                <p class="content-block__text">
-                    At Zovirella, we believe that the joy of gaming should be accessible to everyone—without 
-                    the financial risks that come with real-money operations. Our mission is simple yet powerful: 
-                    to create a <strong>social gaming platform</strong> where adults can experience the excitement 
-                    of slot-style games in a completely <strong>safe, free, and fun environment</strong>.
-                </p>
-                <p class="content-block__text">
-                    We're not here to take your money. We're here to give you an escape—a place where you can 
-                    unwind, enjoy beautiful graphics, engaging gameplay, and the thrill of the spin, all while 
-                    knowing that there's <strong>zero financial risk</strong> involved.
-                </p>
+            <div class="story-header">
+                <div class="showcase-badge">
+                    <span>🌱</span>
+                    <span>The Beginning</span>
+                </div>
+                <h2 class="story-title">How Our Garden Came to Be</h2>
             </div>
 
-            <div class="mission-grid">
-                <div class="mission-card">
-                    <div class="mission-card__icon">🎮</div>
-                    <h3 class="mission-card__title">Risk-Free Entertainment</h3>
-                    <p class="mission-card__desc">
-                        We provide gamers with a safe space to enjoy their favorite games without 
-                        worrying about losing money. Every spin, every game, every moment is 100% free.
-                    </p>
-                </div>
-                <div class="mission-card">
-                    <div class="mission-card__icon">🤝</div>
-                    <h3 class="mission-card__title">Social Gaming Community</h3>
-                    <p class="mission-card__desc">
-                        Zovirella is built on the foundation of community. We foster a space where 
-                        players can enjoy games together, share experiences, and have fun—responsibly.
-                    </p>
-                </div>
-                <div class="mission-card">
-                    <div class="mission-card__icon">💚</div>
-                    <h3 class="mission-card__title">Responsible Gaming Advocacy</h3>
-                    <p class="mission-card__desc">
-                        We're committed to promoting healthy gaming habits. By offering a no-stakes 
-                        alternative, we help players avoid the dangers of gambling addiction.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Story Section -->
-    <section class="section section--alt">
-        <div class="container">
-            <div class="content-block">
-                <h2 class="content-block__title">How Zovirella Was Born</h2>
-                <p class="content-block__text">
-                    Zovirella was created by a team of gaming enthusiasts and tech innovators who shared 
-                    a common concern: <strong>too many people were getting hurt by real-money gaming</strong>. 
-                    We saw friends, family members, and countless others fall into cycles of financial loss 
-                    and emotional distress because they couldn't resist the lure of "just one more spin."
-                </p>
-                <p class="content-block__text">
-                    That's when we asked ourselves: <em>What if we could capture the excitement of these games 
-                    without any of the risk?</em> What if we built a platform where people could experience the 
-                    same joy, the same beautiful visuals, the same engaging mechanics—but without ever having 
-                    to spend a single dollar or worry about losing their savings?
-                </p>
-                <p class="content-block__text">
-                    From that question, <strong>Zovirella</strong> was born. Our name combines the playful 
-                    spirit of our candy-themed universe with a commitment to creating something truly special. 
-                    We've poured our hearts into building a platform that celebrates the artistry and entertainment 
-                    value of gaming while completely removing the financial element that makes traditional operations 
-                    so dangerous.
-                </p>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-item__year">2024</div>
-                    <div class="timeline-item__content">
-                        <h3>The Vision</h3>
-                        <p>Our founders came together with a shared dream: to create a gaming platform that prioritizes player wellbeing over profit.</p>
+            <div class="story-content">
+                <div class="story-panel">
+                    <div class="story-panel__visual">
+                        <div class="flower-cluster">
+                            <span class="flower-emoji" style="--delay: 0s;">🌸</span>
+                            <span class="flower-emoji" style="--delay: 0.2s;">🌺</span>
+                            <span class="flower-emoji" style="--delay: 0.4s;">✨</span>
+                        </div>
+                    </div>
+                    <div class="story-panel__text">
+                        <h3>The Fairy's Dream</h3>
+                        <p>
+                            Once upon a time, in a realm beyond mortal sight, there lived a guardian fairy who watched
+                            over a secret garden filled with magical flowers. She saw how many travelers sought thrills
+                            in dangerous lands where treasures were promised but souls were lost. Her heart ached for
+                            those who fell into the traps of greed and despair.
+                        </p>
+                        <p>
+                            "What if," she whispered to the wind, "I could create a sanctuary where the joy of discovery
+                            exists without peril? Where flowers spin and dance, bringing smiles instead of sorrow?"
+                        </p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-item__year">2025</div>
-                    <div class="timeline-item__content">
-                        <h3>Launch of Zovirella</h3>
-                        <p>After months of development, we launched our flagship game "Rings of Frosting" and opened our doors to the world.</p>
+
+                <div class="story-panel story-panel--reverse">
+                    <div class="story-panel__visual">
+                        <div class="fairy-sprite">🧚‍♀️💫</div>
+                    </div>
+                    <div class="story-panel__text">
+                        <h3>Birth of Belarivonix</h3>
+                        <p>
+                            With a wave of her wand and a sprinkle of stardust, <strong>Belarivonix</strong> was born—an
+                            enchanted garden portal accessible through the magic of <strong>browser games</strong>. Here,
+                            the legendary <strong>Slot Flower</strong> blooms eternal, its petals spinning with vivid
+                            colors of pink, purple, yellow, and green.
+                        </p>
+                        <p>
+                            But this garden holds a sacred rule: no visitor may gamble their earthly riches. All who enter
+                            receive infinite virtual petals to play with. The joy comes not from winning gold, but from
+                            witnessing the beauty of each spin. This is the fairy's gift—<strong>pure entertainment for
+                            grown dreamers aged 21 and beyond</strong>.
+                        </p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-item__year">Future</div>
-                    <div class="timeline-item__content">
-                        <h3>Growing Together</h3>
-                        <p>We're committed to expanding our game library and building a vibrant community of responsible gamers.</p>
+
+                <div class="story-panel">
+                    <div class="story-panel__visual">
+                        <div class="reel-preview">
+                            <div class="reel-symbol">🌸</div>
+                            <div class="reel-symbol">🌺</div>
+                            <div class="reel-symbol">🌼</div>
+                        </div>
+                    </div>
+                    <div class="story-panel__text">
+                        <h3>A Sanctuary for Responsible Play</h3>
+                        <p>
+                            Unlike the treacherous realms where fortunes are lost, <strong>Belarivonix</strong> operates
+                            on a principle of safety. The fairy decreed that her garden would never take coin from visitors,
+                            never promise false riches, and never lead anyone down a path of addiction. Every bloom, every
+                            spin, every moment exists solely for the pleasure of the experience itself.
+                        </p>
+                        <p>
+                            This is why travelers call <strong>Belarivonix</strong> their haven—a place to unwind with
+                            <strong>html games</strong> and <strong>webbased games</strong> that celebrate artistry over
+                            avarice, wonder over wealth.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Business Model Section -->
-    <section class="section">
+    <!-- Our Mission -->
+    <section class="flower-showcase">
+        <div class="flower-showcase__bg"></div>
         <div class="container">
-            <div class="content-block">
-                <h2 class="content-block__title">Our Business Model: 100% Free Gaming</h2>
-                <p class="content-block__text">
-                    Unlike traditional operations, <strong>Zovirella doesn't operate on a pay-to-play 
-                    or bet-to-win model</strong>. We don't ask for deposits, we don't offer real-money prizes, 
-                    and we don't create scenarios where you could lose your hard-earned cash.
-                </p>
-                <p class="content-block__text">
-                    Instead, our platform is built on the principle of <strong>social gaming</strong>. 
-                    You play for fun, for entertainment, and for the sheer joy of the experience. Every feature, 
-                    every game, every animation is crafted to deliver maximum enjoyment without any financial strings attached.
-                </p>
-                <p class="content-block__text">
-                    Our revenue comes from optional features and partnerships—never from player losses. 
-                    This allows us to stay true to our mission while continuing to develop new games and features 
-                    that our community loves.
-                </p>
+            <div class="showcase-header">
+                <div class="showcase-badge">
+                    <span>💚</span>
+                    <span>Our Sacred Promise</span>
+                </div>
+                <h2 class="showcase-title" style="font-size: clamp(44px, 7vw, 76px);">The Belarivonix Covenant</h2>
+                <p class="showcase-subtitle">What We Vow to Every Visitor</p>
             </div>
 
-            <div class="highlight-box">
-                <div class="highlight-box__icon">✨</div>
-                <h3 class="highlight-box__title">What This Means for You</h3>
-                <ul class="highlight-box__list">
-                    <li><strong>No deposits required</strong> – Start playing immediately without linking a payment method</li>
-                    <li><strong>No real-money prizes</strong> – Every reward is virtual and exists purely for entertainment</li>
-                    <li><strong>No financial risk</strong> – You can never lose money on Zovirella, period</li>
-                    <li><strong>No pressure</strong> – Play as much or as little as you want, on your own terms</li>
+            <div class="essence-grid">
+                <div class="essence-card">
+                    <div class="essence-card__number">01</div>
+                    <div class="essence-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="essence-card__title">Free Forever</h3>
+                    <p class="essence-card__desc">
+                        No deposits. No payments. No hidden costs. <strong>Belarivonix</strong> is a gift from the fairy
+                        to all who seek joy without risk. Every visitor receives boundless virtual credits to explore
+                        <strong>Slot Flower</strong> and future garden attractions.
+                    </p>
+                </div>
+
+                <div class="essence-card">
+                    <div class="essence-card__number">02</div>
+                    <div class="essence-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="essence-card__title">No Real Prizes</h3>
+                    <p class="essence-card__desc">
+                        We offer no cash, no rewards, no tangible treasures. All victories in our garden are symbolic—
+                        beautiful moments to celebrate, not currency to trade. This keeps our realm pure and protects
+                        visitors from the darkness that plagues other lands.
+                    </p>
+                </div>
+
+                <div class="essence-card">
+                    <div class="essence-card__number">03</div>
+                    <div class="essence-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="essence-card__title">Adults Only (21+)</h3>
+                    <p class="essence-card__desc">
+                        Though our garden is safe, we honor the threshold of maturity. <strong>Belarivonix</strong>
+                        welcomes only grown dreamers who understand the difference between fantasy and reality, between
+                        playful spins and reckless stakes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We're Different -->
+    <section class="garden-story" id="difference">
+        <div class="container">
+            <div class="story-header">
+                <div class="showcase-badge">
+                    <span>🌟</span>
+                    <span>What Sets Us Apart</span>
+                </div>
+                <h2 class="story-title">Why Belarivonix is Unique</h2>
+            </div>
+
+            <div class="game-features" style="max-width: 900px; margin: 0 auto;">
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <div class="feature-item__icon">🎨</div>
+                        <div class="feature-item__content">
+                            <strong>Artistry Over Profit</strong>
+                            <span>Every petal, animation, and soundscape in <strong>Slot Flower</strong> is crafted with love.
+                            We're artists first, creating <strong>web games</strong> that inspire rather than exploit.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-item__icon">🌐</div>
+                        <div class="feature-item__content">
+                            <strong>Accessible Everywhere</strong>
+                            <span>True to the spirit of <strong>browser games</strong>, our garden opens instantly in any browser.
+                            No downloads, no apps, no barriers. Just visit <strong>belarivonix.com</strong> and step through the portal.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-item__icon">🧚‍♀️</div>
+                        <div class="feature-item__content">
+                            <strong>Guided by Compassion</strong>
+                            <span>Our fairy guardian built this realm after witnessing too many souls lost to greed. Every design
+                            choice prioritizes visitor wellbeing over our own gain. We succeed when you smile, not when you spend.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-item__icon">📖</div>
+                        <div class="feature-item__content">
+                            <strong>Storytelling Magic</strong>
+                            <span>Unlike soulless machines, our games carry narratives. The <strong>Slot Flower</strong> tells
+                            tales with each spin—of seasons changing, of petals dancing in moonlight, of ancient garden lore
+                            passed down through fairy generations.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-item__icon">🛡️</div>
+                        <div class="feature-item__content">
+                            <strong>Transparent & Honest</strong>
+                            <span>No hidden tricks. No manipulative tactics. No false hope. We use certified Random Number Generators
+                            for fairness, but we never pretend that spinning virtual flowers will bring real fortune. Truth is our foundation.</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Safety & Fairness Section -->
-    <section class="section section--alt">
+    <!-- The Guardian Fairy's Message -->
+    <section class="flower-showcase">
+        <div class="flower-showcase__bg"></div>
         <div class="container">
-            <div class="content-block">
-                <h2 class="content-block__title">Safety, Fairness & Transparency</h2>
-                <p class="content-block__text">
-                    Even though we don't operate with real money, we take <strong>fairness and integrity</strong> 
-                    seriously. All of our games run on certified Random Number Generator (RNG) algorithms that ensure 
-                    every spin, every outcome, and every result is completely random and unbiased.
-                </p>
-                <p class="content-block__text">
-                    We believe that <strong>trust</strong> is the foundation of any great platform. That's why we're 
-                    committed to complete transparency about how our games work. There are no hidden mechanics, no 
-                    manipulation, and no tricks designed to keep you playing longer than you'd like.
-                </p>
+            <div class="showcase-header">
+                <div class="showcase-badge">
+                    <span>💌</span>
+                    <span>A Message from the Guardian</span>
+                </div>
+                <h2 class="showcase-title" style="font-size: clamp(36px, 6vw, 64px);">The Fairy's Welcome</h2>
             </div>
 
-            <div class="safety-grid">
-                <div class="safety-card">
-                    <div class="safety-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3 class="safety-card__title">Certified RNG</h3>
-                    <p class="safety-card__desc">
-                        Our games use industry-standard Random Number Generators to ensure fair and unpredictable outcomes.
-                    </p>
-                </div>
-                <div class="safety-card">
-                    <div class="safety-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
-                    </div>
-                    <h3 class="safety-card__title">Age Verification</h3>
-                    <p class="safety-card__desc">
-                        We strictly enforce our 21+ policy to ensure our platform is used responsibly by adults only.
-                    </p>
-                </div>
-                <div class="safety-card">
-                    <div class="safety-card__icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-                        </svg>
-                    </div>
-                    <h3 class="safety-card__title">Data Privacy</h3>
-                    <p class="safety-card__desc">
-                        Your information is protected with industry-leading security measures and never sold to third parties.
-                    </p>
-                </div>
+            <div class="enchanted-hero__story" style="max-width: 800px; margin: var(--space-xxl) auto 0; text-align: center;">
+                <p style="font-size: 19px; line-height: 1.9; color: var(--paper-0);">
+                    <em>"Dear traveler, if you've found your way to <strong>Belarivonix</strong>, know that you are safe here.
+                    This garden asks nothing of you but your presence and your smile. Spin the <strong>Slot Flower</strong> as
+                    many times as your heart desires—each bloom is yours to witness, each pattern yours to admire.</em>
+                </p>
+                <p style="font-size: 19px; line-height: 1.9; color: var(--paper-0); margin-top: var(--space-lg);">
+                    <em>I created this sanctuary because I've seen too many beautiful souls corrupted by greed in other realms.
+                    Here, you'll find no such poison. Only the gentle joy of watching petals dance, the satisfaction of beautiful
+                    combinations, and the peace of knowing that tomorrow, you can return and play again—without having lost a single
+                    coin.</em>
+                </p>
+                <p style="font-size: 19px; line-height: 1.9; color: var(--paper-0); margin-top: var(--space-lg);">
+                    <em>Welcome to <strong>Belarivonix</strong>. May your time in our enchanted garden bring you nothing but delight."</em>
+                </p>
+                <p style="font-size: 24px; margin-top: var(--space-xl); color: var(--clr-accent); font-family: var(--font-heading); font-weight: 700;">
+                    — The Guardian Fairy 🧚‍♀️✨
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Values Section -->
-    <section class="section">
+    <!-- Join Our Garden -->
+    <section class="garden-story">
         <div class="container">
-            <div class="content-block">
-                <h2 class="content-block__title">Our Core Values</h2>
-            </div>
-
-            <div class="values-grid">
-                <div class="value-item">
-                    <div class="value-item__number">01</div>
-                    <h3 class="value-item__title">Player Wellbeing First</h3>
-                    <p class="value-item__desc">
-                        Every decision we make starts with one question: "Is this good for our players?" 
-                        We prioritize your health, happiness, and safety above all else.
-                    </p>
-                </div>
-                <div class="value-item">
-                    <div class="value-item__number">02</div>
-                    <h3 class="value-item__title">Transparency Always</h3>
-                    <p class="value-item__desc">
-                        We believe in honest communication. No hidden terms, no fine print tricks, 
-                        and no misleading claims. What you see is what you get.
-                    </p>
-                </div>
-                <div class="value-item">
-                    <div class="value-item__number">03</div>
-                    <h3 class="value-item__title">Community-Driven</h3>
-                    <p class="value-item__desc">
-                        Our players shape our platform. We actively listen to feedback, implement suggestions, 
-                        and build features that our community truly wants.
-                    </p>
-                </div>
-                <div class="value-item">
-                    <div class="value-item__number">04</div>
-                    <h3 class="value-item__title">Innovation & Quality</h3>
-                    <p class="value-item__desc">
-                        We're committed to delivering the highest quality gaming experience with cutting-edge 
-                        technology and beautiful, engaging designs.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section section--cta">
-        <div class="container">
-            <div class="cta-box">
-                <h2 class="cta-box__title">Join the Zovirella Community</h2>
-                <p class="cta-box__desc">
-                    Experience gaming the way it should be—fun, free, and worry-free. 
-                    No downloads, no deposits, no risk. Just pure entertainment.
+            <div class="cta-box" style="background: rgba(30, 27, 47, 0.6); border: 3px solid var(--clr-secondary); padding: var(--space-xxl); border-radius: var(--radius-xl); text-align: center;">
+                <h2 style="font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px); color: var(--clr-accent); margin-bottom: var(--space-lg);">
+                    Ready to Enter the Garden?
+                </h2>
+                <p style="font-size: 18px; color: var(--ink-100); max-width: 700px; margin: 0 auto var(--space-xl);">
+                    Step through the portal and experience <strong>Slot Flower</strong> for yourself. No registration required.
+                    No payment needed. Just pure, magical entertainment crafted for adults who appreciate beauty without risk.
                 </p>
-                <div class="cta-box__buttons">
-                    <a href="/#games" class="btn btn--primary btn--large">
-                        <span>Start Playing Now</span>
+                <div class="enchanted-hero__actions" style="margin-bottom: 0;">
+                    <a href="/game/" class="btn-magical btn-magical--primary btn-magical--large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21"/>
+                        </svg>
+                        <span>Play Slot Flower</span>
+                    </a>
+                    <a href="/contact.html" class="btn-magical btn-magical--ghost btn-magical--large">
+                        <span>Contact the Fairy</span>
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
-                    <a href="/#contact" class="btn btn--ghost btn--large">
-                        <span>Contact Us</span>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Magical Footer -->
+    <footer class="magic-footer">
+        <div class="magic-footer__garden"></div>
         <div class="container">
-            <div class="footer__main">
-                <div class="footer__brand">
-                    <div class="logo">
-                        <span class="logo__icon">🍩</span>
-                        <span class="logo__text">Zovirella</span>
+            <div class="magic-footer__main">
+                <div class="magic-footer__brand">
+                    <div class="footer-logo">
+                        <span class="footer-logo__icon">🌺</span>
+                        <span>Belarivonix</span>
                     </div>
-                    <p class="footer__tagline">A sweet web-games realm for grown-ups (21+)</p>
+                    <p class="footer-motto">Where magical flowers bloom in every spin</p>
+                    <p class="footer-age">21+ Adults Only • Social Play • No Real Prizes</p>
                 </div>
-                <div class="footer__links">
-                    <div class="footer__col">
-                        <h4>Games</h4>
+
+                <div class="magic-footer__cols">
+                    <div class="footer-col">
+                        <h4>The Garden</h4>
                         <ul>
-                            <li><a href="/game/">Rings of Frosting</a></li>
-                            <li><a href="/#games">Zephyr Burst</a></li>
-                            <li><a href="/#games">All Games</a></li>
+                            <li><a href="/game/">Slot Flower</a></li>
+                            <li><a href="/#play">All Games</a></li>
+                            <li><a href="/#story">Our Story</a></li>
                         </ul>
                     </div>
-                    <div class="footer__col">
-                        <h4>Company</h4>
+                    <div class="footer-col">
+                        <h4>Information</h4>
                         <ul>
-                            <li><a href="/about.html">About Us</a></li>
-                            <li><a href="/#contact">Contact</a></li>
+                            <li><a href="/about.html">About Belarivonix</a></li>
+                            <li><a href="/contact.html">Contact Us</a></li>
+                            <li><a href="/#guide">Visitor's Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Responsibility</h4>
+                        <ul>
+                            <li><a href="/community-rules.html">Garden Rules</a></li>
+                            <li><a href="/responsible-gaming.html">Responsible Play</a></li>
+                            <li><a href="/privacy">Privacy</a></li>
                             <li><a href="/terms">Terms of Use</a></li>
-                            <li><a href="/privacy">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__col">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="/community-rules.html">Community Rules</a></li>
-                            <li><a href="/responsible-gaming.html">Responsible Gaming</a></li>
-                            <li><a href="/#faq">FAQ</a></li>
-                            
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="footer__disclaimer">
-                <h3>Disclaimer & Age Restriction Notice</h3>
+            <div class="magic-footer__disclaimer">
+                <h3>🌸 Important Visitor Notice 🌸</h3>
                 <p>
-                    This platform is intended for users aged <strong>21 years and older</strong> and operates 
-                    solely as a social and entertainment hub. There is <strong>no real money gaming or betting</strong> 
-                    on this website. All games featured here are part of "Zephyr Burst" and are purely social, 
-                    meaning no real prizes or winnings will be issued. Achievements and progress made within these 
-                    games are for entertainment purposes only and do not translate into real-world outcomes or 
-                    success in any form of real-money activities. Winning in these games does not guarantee 
-                    future wins in any "real stakes" activities. This website serves as a free-access portal 
-                    to social Zephyr Burst games, and we take no responsibility for their content. If you believe 
-                    any game causes offense or harm, please contact us. Our goal is to provide a fun and engaging 
-                    experience for all users—enjoy, play responsibly, and remember that it's all about entertainment!
+                    <strong>Belarivonix</strong> is a social entertainment platform for visitors aged <strong>21 years and older</strong>.
+                    This website features <strong>browser games</strong>, <strong>html games</strong>, and <strong>webbased games</strong>
+                    including our flagship title <strong>Slot Flower</strong>. These are <strong>not</strong> real-money activities.
+                    There is no betting, no wagering, and no cash prizes. All "wins," scores, and progress are purely for entertainment
+                    and hold no real-world value. Success in <strong>Slot Flower</strong> does not indicate future success in any
+                    real-stakes activities. <strong>Belarivonix</strong> serves as a free portal to social <strong>web games</strong>,
+                    and we bear no responsibility for how you interpret or use this content. If any game causes concern, please contact
+                    us immediately. Our mission is simple: to provide a whimsical, responsible, and utterly entertaining escape for
+                    grown-up dreamers. Play responsibly, enjoy the magic, and remember—it's all about the journey, not the destination!
                 </p>
             </div>
 
-            <div class="footer__badges">
-                <div class="badge-item">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
-                        <text x="20" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">21+</text>
+            <div class="magic-footer__badges">
+                <div class="footer-badge">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="2"/>
+                        <text x="18" y="22" text-anchor="middle" font-size="12" font-weight="bold" fill="currentColor">21+</text>
                     </svg>
                     <span>Age Verified</span>
                 </div>
-                <div class="badge-item">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <path d="M20 4L24 16H36L26 24L30 36L20 28L10 36L14 24L4 16H16L20 4Z" stroke="currentColor" stroke-width="2"/>
+                <div class="footer-badge">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <path d="M18 4L21 14H31L23 20L26 30L18 24L10 30L13 20L5 14H15L18 4Z" stroke="currentColor" stroke-width="2"/>
                     </svg>
                     <span>NCPG Member</span>
                 </div>
-                <div class="badge-item">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                        <rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="2"/>
-                        <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2" fill="none"/>
+                <div class="footer-badge">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                        <rect x="6" y="6" width="24" height="24" rx="3" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 18L16 22L24 14" stroke="currentColor" stroke-width="2"/>
                     </svg>
                     <span>CGAA Certified</span>
                 </div>
             </div>
 
-            <div class="footer__bottom">
-                <address class="footer__address">
-                    123 Candyfloss Lane, Brighton BN1 4GQ, United Kingdom · 
-                    <a href="mailto:hello@zovirella.com">hello@zovirella.com</a>
+            <div class="magic-footer__bottom">
+                <address class="footer-address">
+                    Enchanted Gardens Office Park, Blossom Lane 88, London E1 6AN, United Kingdom ·
+                    <a href="mailto:hello@belarivonix.com">hello@belarivonix.com</a>
                 </address>
-                <p class="footer__copyright">
-                    © <span id="year"></span> Zovirella · All rights reserved · 
-                    <a href="/terms">Terms</a> · 
-                    <a href="/privacy">Privacy</a> · 
-                    <a href="/#contact">Contact</a>
+                <p class="footer-copyright">
+                    © <span id="year"></span> Belarivonix · All rights reserved ·
+                    <a href="/terms">Terms</a> ·
+                    <a href="/privacy">Privacy</a> ·
+                    <a href="/contact.html">Contact</a>
                 </p>
             </div>
         </div>
