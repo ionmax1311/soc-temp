@@ -68,25 +68,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// FAQ Accordion
+// FAQ Accordion - Updated for guide-item
 const faqItems = document.querySelectorAll('.faq-item');
+const guideItems = document.querySelectorAll('.guide-item');
 
 faqItems.forEach(item => {
     const question = item.querySelector('.faq-item__question');
-    
-    question.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        
-        // Close all items
-        faqItems.forEach(faqItem => {
-            faqItem.classList.remove('active');
+
+    if (question) {
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            faqItems.forEach(faqItem => {
+                faqItem.classList.remove('active');
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+            }
         });
-        
-        // Open clicked item if it wasn't active
-        if (!isActive) {
-            item.classList.add('active');
-        }
-    });
+    }
+});
+
+// Guide Accordion
+guideItems.forEach(item => {
+    const trigger = item.querySelector('.guide-item__trigger');
+
+    if (trigger) {
+        trigger.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            guideItems.forEach(guideItem => {
+                guideItem.classList.remove('active');
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    }
 });
 
 // Intersection Observer for scroll animations

@@ -203,19 +203,28 @@ img {
     box-shadow: 0 10px 0 #FF6A00, 0 16px 24px rgba(11, 10, 20, 0.4);
 }
 
-.header-badge {
-    display: flex;
+.btn-play-now {
+    display: inline-flex;
     align-items: center;
+    gap: var(--space-sm);
+    background: var(--gradient-cta);
+    color: var(--ink-800);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-hard);
+    transition: all 0.22s ease;
 }
 
-.age-chip {
-    background: var(--gradient-chip);
-    color: var(--paper-0);
-    font-weight: 700;
-    font-size: 14px;
-    padding: var(--space-sm) var(--space-md);
-    border-radius: var(--radius-pill);
-    box-shadow: var(--shadow-soft);
+.btn-play-now:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 0 #FF6A00, 0 16px 24px rgba(11, 10, 20, 0.4);
+}
+
+.btn-play-now svg {
+    width: 18px;
+    height: 18px;
 }
 
 .nav-toggle {
